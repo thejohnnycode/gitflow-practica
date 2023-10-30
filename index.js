@@ -34,3 +34,17 @@ modificada. Ahora para subirlo a la rama principal (develop) hacemos un merge.
 function sayBye() {
     console.log("ata luego colegaa")
 }
+/*
+13- Hacer copia de seguridad el proyecto. Suponiendo que está es la primer version.
+    crear una rama que contenga esta versión.
+    git checkout -b release/1.0.0 
+    NOMENCLATURA DE LA VERSION:
+         1 = major: Si se actualiza este numero puede romper todo. Es entre una version y otra, esto puede
+        traer incompatibilidades.
+        2 = minor: nuevas features.
+        3 = hotfix: cambios rapidos para hacer en el codigo.
+
+14- Llevar los cambios a la rama main, siendo que es la version apta para el uso.
+    git checkout main
+    git merge --no-ff release/1.0.0
+*/
