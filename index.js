@@ -20,10 +20,17 @@
 9- Para probar lo anterior, creamos una funcion sayHello.
 */
 function sayHello() {
-    console.log("Hola!")
+    console.log("Hola chancho con cola")
 }
 /*
-10- git add.
+10- git add .
     git commit -m "feat: se ha agregado la funcion sayHello"
     git push
+y verificamos si se subieron los cambios en github. Con esto, podemos movernos entre ramas, viendo solo actualizado lo de la rama
+modificada. Ahora para subirlo a la rama principal (develop) hacemos un merge.
+11- MERGE: git merge --no-ff feature/say-hello (el flag --no-ff es para que se sigan viendo los cambios pasados y no se pisen)
+12- Crear una nueva rama a modo de practica y prueba de lo mismo, repitiendo los pasos (crearla, subirla, git add y git commit...)
 */
+function sayBye() {
+    console.log("ata luego colegaa")
+}
