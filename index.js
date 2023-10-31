@@ -32,7 +32,7 @@ modificada. Ahora para subirlo a la rama principal (develop) hacemos un merge.
 12- Crear una nueva rama a modo de practica y prueba de lo mismo, repitiendo los pasos (crearla, subirla, git add y git commit...)
 */
 function sayBye() {
-    console.log("ata luego colegaa")
+    console.log("bye bye bye")
 }
 /*
 13- Hacer copia de seguridad el proyecto. Suponiendo que está es la primer version.
@@ -47,4 +47,21 @@ function sayBye() {
 14- Llevar los cambios a la rama main, siendo que es la version apta para el uso.
     git checkout main
     git merge --no-ff release/1.0.0
+-----------------------------------------------------------------------------------------
+OK, HASTA ACÁ SUBIMOS EL PROYECTO AL MAIN Y HAY UN BACKUP EN LA RAMA release1.0.0.
+-----------------------------------------------------------------------------------------
+15- Ahora vamos a ver las TAGS (estan en github, al lado de las ramas):
+    Son pequeñas anotaciones para seguir ciertos puntos del codigo.
+    Se sube como una rama.
+    git tag -a v1.0.0 -m "version 1.0.0 lista"
+
+16- SOLUCIONAR ERRORES URGENTES: hotfix
+    Desde la rama main, creamos una nueva rama
+    git checkout -b hotfix/bug-name (en vez de bug-name, reemplazar por el codigo a solucionar. En este ejemplo, /funcion-say-bye)
+    Subirla desde la nubecita
+    Hacer los cambios en el codigo
+    Subirlos:
+        git add .
+        git commit -m "fix: se ha arreglado error en funcion sayBye()"
+        
 */
